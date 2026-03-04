@@ -46,6 +46,7 @@ td {
   border: 1px solid #dee2e6;
   padding: 12px 5px;
   text-align: center;
+  cursor: pointer;
 }
 
 th {
@@ -62,14 +63,13 @@ th:nth-child(7) {
   color: #dc3545;
 }
 
-td:hover {
+td:hover:not(.today) {
   background-color: #e9ecef;
-  cursor: pointer;
   transition: background 0.8s;
 }
 
 .today {
-  background-color: #ffcc00 !important;
+  background-color: #ffcc00;
   font-weight: bold;
   outline: 2px solid #e67e22;
 }
